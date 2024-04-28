@@ -83,7 +83,6 @@ class MovieStore: MovieService {
             }
             
             do {
-                
                 let decoddedResponse = try self.jsonDecoder.decode(D.self, from: data)
                 self.executeCompletionHandlerInMainThread(with: .success(decoddedResponse), completion: completion)
                 
